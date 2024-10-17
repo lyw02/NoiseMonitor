@@ -40,7 +40,8 @@ const NoiseDisplayer = ({ isMonitoring }: { isMonitoring: boolean }) => {
           }
           const rms = Math.sqrt(sumSquares / dataArray.length);
           const refPressure = 20 * Math.pow(10, -6);
-          const decibels = 20 * Math.log10(rms / refPressure);
+          const maxPressure = 1;
+          const decibels = 20 * Math.log10((rms * maxPressure) / refPressure);
           setDecibels(decibels);
           return decibels;
         };
