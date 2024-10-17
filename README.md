@@ -6,7 +6,7 @@ How to use:
 npm install
 npm run dev
 ```
-Or visit deploted version: https://noise-monitor-three.vercel.app/
+Or visit deployed version: https://noise-monitor-three.vercel.app/
 
 Click `Start monitoring` to start.
 
